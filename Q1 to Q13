@@ -1,0 +1,213 @@
+Q1. Write a program to print unit digit of a given number
+Ans:
+	#include<stdio.h>
+	int main()
+	{
+	     int x;
+	     printf("Enter a number");
+	     scanf("%d",&x);
+	     printf("Unit digit of %d is %d",x,x%10);
+	     printf("\n");
+	     return 0;
+	}
+	
+
+	Q2.Write a program to print a given number without its last digit.
+	Ans:#include<stdio.h>
+          int main()
+          {
+           int x;
+	     printf("Enter a number");
+	     scanf("%d",&x);
+	     printf("Number without last digit is %d",x/10);
+	     printf("\n");
+	     return 0;
+	    }
+	
+
+	Q3.Write a program to swap values of two int variables
+	 Ans:#include<stdio.h>
+	     int main()
+	    {
+	     int a,b,c;
+	     printf("Enter two number");
+	     scanf("%d%d",&a,&b);
+	     printf("a=%d b=%d",a,b);
+	     c=a;
+	     a=b;
+	     b=c;
+	     printf("\na=%d b=%d",a,b);
+	     printf("\n");
+	     return 0;
+	}
+	
+
+	Q4.Write a program to swap values of two int variables without using a third variable.
+	Ans:#include<stdio.h>
+	int main()
+	{
+	     int a,b;
+	     printf("Enter two number");
+	     scanf("%d%d",&a,&b);
+	     printf("a=%d b=%d",a,b);
+	     a=a+b;
+	     b=a-b;
+	     a=a-b;
+	     printf("\na=%d b=%d",a,b);
+	     printf("\n");
+	     return 0;
+	}
+	
+
+	Q5.Write a program to input a three-digit number and display the sum of the digits.
+	Ans:#include<stdio.h>
+	int main()
+	{
+	 int x=126;
+	 int rem=0,sum=0;
+	
+
+	 rem =x%10;
+	 x =x/10;
+	 sum =sum+rem;
+	
+
+	 rem =x%10;
+	 x =x/10;
+	 sum =sum+rem;
+	
+
+	 rem =x%10;
+	 x =x/10;
+	 sum =sum+rem;
+	
+
+	printf("%d",sum);
+	    return 0;
+	}
+	
+
+	Q6.Write a program which takes a character as an input and displays its ASCII code.
+	Ans:#include<stdio.h>
+	int main()
+	{
+	    char c;
+	    printf("Enter character:");
+	    scanf("%c",&c);
+	    printf("character ASCII code is %d",c);
+	    printf("\n");
+	    return 0;
+	}
+
+   Q7.Write a program to find the position of first 1 in LSB.
+Ans:
+	#include<stdio.h>
+int main()
+{
+ int x=126;
+ int rem=0,sum=0;
+
+ rem =x%10;
+ x =x/10;
+ sum =sum+rem;
+
+ rem =x%10;
+ x =x/10;
+ sum =sum+rem;
+
+ rem =x%10;
+ x =x/10;
+ sum =sum+rem;
+printf("%d",sum);
+    return 0;
+}
+
+Q8.Write a program to check whether the given number is even or odd using a bitwise operator.
+Ans:#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    if(a>0)
+    {
+        printf("Positive");
+    }
+    if(a<=0)
+    {
+        printf("Non-positive");
+    }
+    printf("\n");
+    return 0;
+}
+
+Q9.Write a program to print size of an int, a float, a char and a double type variable
+Ans:#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    a=sizeof(int);
+    b=sizeof(float);
+    c=sizeof(char);
+    d=sizeof(double);
+    printf("\nSize is %d ",a);
+    printf("\nSize is %d ",b);
+    printf("\nSize is %d ",c);
+    printf("\nSize is %d ",d);
+    printf("\n");
+    return 0;
+}
+
+Q10.Write a program to make the last digit of a number stored in a variable as zero.
+(Example - if x=2345 then make it x=2340)
+Ans: #include<stdio.h>
+int main()
+{ 
+int x=2345;
+x=x/10;
+x=x*10;
+printf("%d",x);
+return 0;
+}
+Q11.Write a program to input a number from the user and also input a digit. Append a
+digit in the number and print the resulting number. (Example - number=234 and
+digit=9 then the resulting number is 2349)
+Ans: #include<stdio.h>
+int main()
+{ 
+int x=234,n=9;
+x=x*10;
+x=x+n;
+printf("%d",x);
+return 0;
+}
+Q12.Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR and
+convert it into USD.
+Ans: #include<stdio.h>
+int main()
+{ 
+    int x,USD;
+	printf("Enter amount in INR is:");
+	scanf("%f",&x);
+	USD=76.23*x;
+	printf("Converted USD is %d");
+	return 0;
+}
+	
+13.Write a program to take a three-digit number from the user and rotate its digits by
+one position towards the right.
+Ans: #include<stdio.h>
+int main()
+{
+	int x;
+	printf("Enter a three digit number:");
+    scanf("%d",&x);
+    printf("\nBefore rotation: %d",x);
+    x=x%10*100+x/10;
+     printf("\nAfter rotation: %d",x);
+     	printf("\n");
+    return 0;
+}
+
+
+
